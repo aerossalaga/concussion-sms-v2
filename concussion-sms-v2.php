@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Resources For You</title>
+      <!-- Stylesheet File -->
+      <link rel="stylesheet" href="https://go.carfidirect.net/v2/assets/css/vendor-min.css">
+      <link rel="stylesheet" href="https://go.carfidirect.net/v2/assets/css/style.css" async>
+      <link rel="stylesheet" href="https://go.carfidirect.net/v2/assets/css/responsive.css">
+      <script type="text/javascript" src="https://go.carfidirect.net/src/jquery-3.1.1.min.js.download"></script>
+      <link type="text/css" rel="stylesheet" href="https://go.carfidirect.net/v2/css/lightslider.css" />
+      <script src="https://go.carfidirect.net/v2/js/lightslider.js"></script>
+      <script>
+         //		$(window).on('load', function() {
+         //		$(".se-pre-con").fadeOut("slow");
+         //	});
+      </script>
+      <style>
+        .introText {
+            background: #fff;
+            padding: 30px 0;
+        }
+
+        .introText h1 {
+            line-height: 1.5em !important;
+        }
+
+        /*-------------Infinite Bouncing Arrow----------*/
+        .bounce {
+            -moz-animation: bounce 2s infinite;
+            -webkit-animation: bounce 2s infinite;
+            animation: bounce 2s infinite;
+            margin-top: 2px;
+        }
+
+        @-moz-keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                -moz-transform: translateX(0);
+                transform: translateX(0);
+            }
+
+            40% {
+                -moz-transform: translateX(-10px);
+                transform: translateX(-10px);
+            }
+
+            60% {
+                -moz-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+        }
+
+        @-webkit-keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+
+            40% {
+                -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+            }
+
+            60% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+
+            40% {
+                -moz-transform: translateX(-10px);
+                -ms-transform: translateX(-10px);
+                -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+            }
+
+            60% {
+                -moz-transform: translateX(-5px);
+                -ms-transform: translateX(-5px);
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+        }
+
+        .no-js #loader {
+            /*display: none;*/
+        }
+
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(../Preloader_2.gif) center no-repeat #fff;
+        }
+
+        .h2scores {
+            font-size: 22px;
+            color: #116696;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: -0.025rem;
+            font-weight: bold;
+        }
+
+        .topRatingOnlyBorderBox {
+            border: 4px solid #999;
+            margin-top: 30px;
+        }
+
+        #visitorCountOverlayContainer {
+            width: 100%;
+        }
+
+        .visitorCountOverlay {
+            animation: 1.25s ease-out 0s 1 slideInFromBottom;
+            background-color: #222;
+            border-radius: 5px;
+            bottom: 20px;
+            color: #ccc;
+            cursor: pointer;
+            line-height: 1.2rem;
+            padding: 15px;
+            position: fixed;
+            z-index: 200;
+        }
+
+        .visitorCountClose {
+            background: url(../src/x.png) #777 no-repeat center;
+            border-radius: 15px;
+            color: #fff;
+            height: 24px;
+            position: absolute;
+            right: -7px;
+            text-align: center;
+            top: -7px;
+            width: 24px;
+            z-index: 201;
+        }
+
+        .scoresdiv {
+            text-align: left;
+            font-size: 12px;
+        }
+
+        @media (max-width: 767px) {
+            .topRatingOnlyBorderBox {
+                border: none;
+                border-top: 4px solid #999;
+                border-bottom: 4px solid #999;
+            }
+
+            .visitorCountOverlay {
+                margin-left: 15px;
+                width: -moz-calc(100% - 30px);
+                width: -webkit-calc(100% - 30px);
+                width: -o-calc(100% - 30px);
+                width: calc(100% - 30px);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .hidden-lg {
+                display: none !important;
+            }
+        }
+      </style>
+      <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <!-- header start -->
+      <div class="header-area" style="background-color: #2b5174;">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4 col-3">
+                  <div class="menu-bar">
+                     <a href="#"><i class="fa fa-user"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-4 col-4 text-center" style="color: aliceblue;">
+                  Resources
+               </div>
+               <div class="col-sm-4 col-5 text-right">
+                  <ul class="header-right">
+                     <li>
+                        <a href="#" data-toggle="modal" data-target="#modal-centered">
+                        <i class="fa fa-bell animated infinite swing"></i>
+                        <span class="badge">1</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header end -->
+      <!-- navbar end -->
+      <div class="ba-navbar" style="background: #fff;overflow-y: scroll;-ms-overflow-style: none;scrollbar-width: none;">
+         <div class="ba-navbar-user">
+            <div class="menu-close">
+               <i class="la la-times"></i>
+            </div>
+            <div class="thumb">
+               <i class="fa fa-user" style="font-size:35px;"></i>
+            </div>
+            <div class="details">
+               <h5></i></h5>
+               <p></p>
+               <p>App ID: </p>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="balance-area mg-top-50" style="padding-top: 50px;">
+         <div class="container">
+            <div class="ba-history-inner text-center" style="padding: 10px 22px 10px 22px;">
+               <script type="text/javascript">
+                  var bhm_firstname = '';
+                  var bhm_lastname = '';
+                  var bhm_phone = '';
+                  var bhm_email = '';
+                  var bhm_state = '';
+                  var bhm_address = '';
+                  var bhm_city = '';
+                  var bhm_zip = '';
+                  var bhm_sub1 = 'status-v2';
+                  var bhm_sub2 = 'bc2554fbf018461bb31de21c66d4b149';
+               </script>
+               <!-- BHM container -->
+               <div class="bhm-offer" data-id="f986381c3287-0b7e-7182-4e67-449f-883b5159" data-afid="2" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545" data-bhm-urid="45002251641545c0a5fe9206e4618bebea78409f85c09603">
+                  <style type="text/css">
+                    .bhm-offer {
+                        p {
+                            all: unset;
+                        }
+
+                        .bhm-path-wall {
+                            display: none;
+                        }
+
+                        .bhm-offer-wall {
+                            .bhm-creative-container {
+                                border: solid thin #CCC;
+                                padding: 10px;
+                                background: #FFF;
+                                text-align: center;
+                                margin-bottom: 15px;
+                                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                                border-radius: 0.375rem !important;
+                                display: grid;
+
+                                .bhm-creative-image img {
+                                    max-width: 200px;
+                                }
+
+                                .bhm-creative-cta {
+                                    a {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            .bhm-creative-group-headline {
+                                font-weight: 600;
+                                text-align: center;
+                                font-size: calc(5vw + 4px);
+                                margin: 12px 0px;
+                            }
+
+                            .bhm-creative-headline {
+                                font-weight: 600;
+                                font-size: calc(5vw + 4px);
+                                margin-top: 8px;
+                                grid-column: 1;
+                                grid-row: 1;
+                            }
+
+                            .bhm-creative-image {
+                                grid-column: 1;
+                                grid-row: 2;
+                            }
+
+                            .bhm-creative-subheadline {
+                                font-size: calc(4vw + 4px);
+                                margin-top: 8px;
+                                grid-column: 1;
+                                grid-row: 3;
+                            }
+
+                            .bhm-creative-text {
+                                grid-column: 1;
+                                grid-row: 4;
+                            }
+
+                            .bhm-creative-cta {
+                                grid-column: 1;
+                                grid-row: 5;
+                            }
+
+                            .bhm-creative-disclaimer {
+                                grid-column: 1;
+                                grid-row: 6;
+                            }
+
+                            .bhm-creative-skip {
+                                grid-column: 1;
+                                grid-row: 7;
+                            }
+
+                            ul {
+                                display: grid;
+                                justify-content: center;
+                                text-align: left;
+                                padding-left: 15px;
+                                list-style: none;
+                            }
+
+                            li::before {
+                                content: "✓";
+                                padding-right: 8px;
+                                color: #13629c;
+                                font-weight: 600;
+                            }
+
+                            .bhm-creative-cta a,
+                            .bhm-btn-click-to-call {
+                                display: inline-block;
+                                background: #ff9900;
+                                color: #ffffff;
+                                padding: 10px 25px;
+                                border-radius: 5px;
+                                text-decoration: none;
+                                border: solid thin #ff9900;
+                                box-shadow: 0 0 10px #bebebe;
+                                font-weight: 600;
+                                font-size: 20px;
+                                box-sizing: border-box;
+                            }
+
+                            .bhm-creative-disclaimer {
+                                margin-top: 12px;
+                            }
+
+                            @media screen and (min-width:768px) {
+                                .bhm-creative-group-headline {
+                                    font-size: 24px;
+                                }
+
+                                .bhm-creative-container {
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                }
+
+                                .bhm-creative-headline {
+                                    font-size: 20px;
+                                    grid-column: span 3;
+                                }
+
+                                .bhm-creative-subheadline {
+                                    font-size: 18px;
+                                    grid-column: span 3;
+                                }
+
+                                .bhm-creative-cta {
+                                    grid-column: 3;
+                                    grid-row: 4;
+                                }
+
+                                .bhm-creative-text {
+                                    grid-column: span 2;
+
+                                    ul {
+                                        justify-content: left;
+                                    }
+                                }
+
+                                .bhm-creative-image {
+                                    grid-column: span 3;
+                                }
+
+                                .bhm-creative-disclaimer {
+                                    grid-column: span 3;
+                                }
+
+                                .bhm-creative-skip {
+                                    grid-column: span 3;
+                                }
+                            }
+
+                            @media screen and (min-width:1024px) {
+                                .bhm-creative-group-headline {
+                                    font-size: 24px;
+                                }
+
+                                .bhm-creative-container {
+                                    display: grid;
+                                    grid-template-columns: 1fr 11fr;
+                                    align-items: center;
+                                    column-gap: 25px;
+                                    row-gap: 2px;
+                                }
+
+                                .bhm-creative-headline {
+                                    font-size: 20px;
+                                    grid-column: 2 / span 3;
+                                    grid-row: 1;
+                                    text-align: left;
+                                }
+
+                                .bhm-creative-subheadline {
+                                    font-size: 18px;
+                                    grid-column: 2 / span 3;
+                                    grid-row: 2;
+                                    text-align: left;
+                                    margin-top: 0px;
+                                }
+
+                                .bhm-creative-image {
+                                    grid-column: 1 / 2;
+                                    grid-row: 1 / span 5;
+
+                                    img {
+                                        max-width: 350px;
+                                    }
+                                }
+
+                                .bhm-creative-text {
+                                    grid-column: 2;
+                                    grid-row: 3;
+
+                                    ul {
+                                        justify-content: start;
+                                        text-align: left;
+                                        padding-top: 0px;
+                                        padding-bottom: 0px;
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;
+                                    }
+                                }
+
+                                .bhm-creative-cta {
+                                    grid-column: 3;
+                                    grid-row: 3;
+
+                                    a {
+                                        max-width: 250px;
+                                    }
+                                }
+
+                                .bhm-creative-disclaimer {
+                                    grid-column: 2 / span 3;
+                                    grid-row: 4;
+                                    text-align: left;
+                                    margin-top: 0px;
+                                }
+                            }
+                        }
+                    }
+                  </style>
+                  <style>
+                    .bhm-offer {
+                        .bhm-container-offers {
+                            .bhm-offer-wall {
+                                .bhm-creative-group-headline {
+                                    line-height: 26px;
+                                    margin-bottom: 6px;
+                                    margin-top: 20px;
+                                }
+
+                                .bhm-creative-group-subheadline {
+                                    margin-bottom: 6px;
+                                }
+
+                                .bhm-creative-container {
+                                    .bhm-creative-image {
+                                        grid-row: 2;
+
+                                        img {
+                                            max-width: 250px;
+                                        }
+                                    }
+
+                                    .bhm-creative-text {
+                                        font-size: 16px;
+                                    }
+
+                                    .bhm-creative-cta {
+                                        a {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+
+                                @media screen and (min-width: 1024px) {
+                                    .bhm-creative-container {
+                                        row-gap: 2px;
+
+                                        .bhm-creative-image {
+                                            grid-column: 1;
+                                            grid-row: 3;
+                                        }
+
+                                        .bhm-creative-headline {
+                                            grid-column: 1 / span 3;
+                                            text-align: center;
+                                        }
+
+                                        .bhm-creative-cta {
+                                            a {
+                                                width: 250px;
+                                            }
+                                        }
+
+                                        .bhm-creative-disclaimer {
+                                            margin-top: 8px;
+                                            grid-column: 2 / span 2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                  </style>
+                  <style>
+                  /* ADD YOUR CUSTOM CSS HERE AEROS */
+                  
+                  /* Credit Score Banner - Slot 0 Styling */
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] {
+                    /* Mobile-first approach */
+                    border: 1px solid #62b346;
+                    border-radius: 0.375rem;
+                    padding: 0 0 20px;
+                    margin-bottom: 35px;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    /* Make it stand out as a callout/alert */
+                    transform: translateY(0);
+                    transition: all 0.3s ease;
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  }
+
+                  /* Sticky state styling */
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"].sticky {
+                    position: fixed;
+                    top: 60px; /* Account for header height */
+                    left: 0;
+                    right: 0;
+                    z-index: 1000;
+                    border-radius: 0 0 16px 16px;
+                    margin: 0;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 0 !important;
+                  }
+
+                  /* Add spacer when sticky */
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"].sticky + .sticky-spacer {
+                    height: 120px; /* Adjust based on your banner height */
+                  }
+
+                  /* Adjust content padding */
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-headline,
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-text,
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-cta {
+                    margin-top: 0;
+                  }
+
+                  /* Headline styling for slot 0 */
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-headline {
+                    color: #FFF;
+                    font-size: 20px;
+                    font-weight: 800;
+                    text-align: left;
+                    margin-bottom: 0;
+                    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                    background-color: #62b346;
+                    padding: 10px 25px;
+                    width: 100%;
+                  }
+
+                  /* Text styling for slot 0 */
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-text {
+                    color: #2c4a3a;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    text-align: left;
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    padding: 15px 25px;
+                  }
+
+                  /* CTA button styling for slot 0 */
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-cta {
+                     max-width: 100%;
+                     width: 100%;
+                     padding: 0 25px;
+                  }
+
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-cta a {
+                    background: linear-gradient(135deg, #62b346 0%, #4a8f38 100%) !important;
+                    color: white !important;
+                    border: none !important;
+                    border-radius: 6px !important;
+                    padding: 15px 30px !important;
+                    font-size: 16px !important;
+                    font-weight: 700 !important;
+                    text-transform: uppercase !important;
+                    letter-spacing: 1px !important;
+                    box-shadow: 0 6px 20px rgba(98, 179, 70, 0.4), 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+                    transition: all 0.3s ease !important;
+                    display: block !important;
+                    text-align: center !important;
+                    text-decoration: none !important;
+                    position: relative;
+                    overflow: hidden;
+                    width: auto;
+                    max-width: max-content;
+                    margin: auto;
+                  }
+
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-cta a::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                    transition: left 0.5s ease;
+                  }
+
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-cta a:hover {
+                    background: linear-gradient(135deg, #4a8f38 0%, #3a7a2e 100%) !important;
+                    transform: translateY(-3px) !important;
+                    box-shadow: 0 8px 25px rgba(98, 179, 70, 0.5), 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+                  }
+
+                  .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-cta a:hover::before {
+                    left: 100%;
+                  }
+
+                  @media (max-width: 575px) {
+                     .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-text {
+                        font-size: 14px;
+                     }
+
+                     .bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"] .bhm-creative-cta a {
+                        max-width: 100%;
+                        width: 100%;
+                     }
+                  }
+                  </style>
+                  <div id="bhm-ad-unit-headline">
+                     <div id="message-list_1750193734.009639" class="c-virtual_list__item" tabindex="0" role="listitem" aria-setsize="-1" data-qa="virtual-list-item" data-item-key="1750193734.009639">
+                        <div class="c-message_kit__background p-message_pane_message__message c-message_kit__message" role="presentation" data-qa="message_container" data-qa-unprocessed="false" data-qa-placeholder="false">
+                           <div class="c-message_kit__hover" role="document" aria-roledescription="message" data-qa-hover="true">
+                              <div class="c-message_kit__actions c-message_kit__actions--above">
+                                 <div class="c-message_kit__gutter">
+                                    <div class="c-message_kit__gutter__right" role="presentation" data-qa="message_content">
+                                       <div class="c-message_kit__blocks c-message_kit__blocks--rich_text">
+                                          <div class="c-message__message_blocks c-message__message_blocks--rich_text" data-qa="message-text">
+                                             <div class="p-block_kit_renderer" data-qa="block-kit-renderer">
+                                                <div class="p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first">
+                                                   <div class="p-rich_text_block" dir="auto">
+                                                      <div class="p-rich_text_section">
+                                                         <span style="font-size: 18pt;">
+                                                         <strong data-stringify-type="bold">Auto Loan Support</strong>
+                                                         </span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="message-list_bottomSpacer" class="c-virtual_list__item" tabindex="-1" role="presentation" aria-setsize="-1" data-qa="virtual-list-item" data-item-key="bottomSpacer"></div>
+                  </div>
+                  <div id="bhm-ad-unit-subheadline">
+                     <p>While we work on your application, we've got ways to help you move forward. These tools can make things easier and help with your money needs.&nbsp;Everything listed below is easily accessible, fast-paced, and designed to help you take action now.</p>
+                  </div>
+                  <div class="bhm-container-offers" data-bhm-aucid="1349">
+                     <div class="bhm-offer-wall">
+                        <div class="bhm-creative-container" data-bhm-slot="0" data-bhm-cid="" data-bhm-ofid="" data-bhm-slid="" data-bhm-aucid="" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="">
+                           <div class="bhm-creative-headline">
+                              <p>Pending Approval</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              Before you begin your search for a new car, understanding your credit score is crucial. It can significantly impact your loan rates when financing your next car. We offer you a credit report and free credit score from our partner:
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="" class=" bhm-creative-button" target="_blank">
+                                 <p>Proceed to Next Step</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-group-headline">Get Financial Support When You Need It Most</div>
+                        <div class="bhm-creative-group-subheadline">Explore quick, no-hassle ways to access cash, manage expenses, and avoid high-interest debt.</div>
+                        <div class="bhm-creative-container" data-bhm-slot="1" data-bhm-cid="2091" data-bhm-ofid="3647" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/7FTJT38/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222091%22%2C%22slot%22%3A1%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/smartdebtproslogo1.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>How to Slash Your Debt In 48 Months</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Work with certified debt specialists</li>
+                                 <li dir="ltr" role="presentation">Reduce or restructure what you owe</li>
+                                 <li dir="ltr" role="presentation">Stop collection calls</li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/7FTJT38/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222091%22%2C%22slot%22%3A1%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Access Your Debt Free Plan</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-container" data-bhm-slot="2" data-bhm-cid="2090" data-bhm-ofid="3264" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/6QTNH6P/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222090%22%2C%22slot%22%3A2%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/nextdaypersonaloanlogo.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Looking for quick cash? Access up to $40,000 today!</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Apply in minutes</li>
+                                 <li dir="ltr" role="presentation">No impact to your credit score</li>
+                                 <li dir="ltr" role="presentation">All Credit Types<strong id="docs-internal-guid-f1e456cb-7fff-fb04-367a-bdba09988628"></strong></li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/6QTNH6P/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222090%22%2C%22slot%22%3A2%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Access Funds</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-container" data-bhm-slot="3" data-bhm-cid="2097" data-bhm-ofid="3601" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/7CKN77B/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222097%22%2C%22slot%22%3A3%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/nationaldebtreliefnew.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Save Up to 50% on Your Debt – Real Clients, Real Savings</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Over 550,000 Clients Helped</li>
+                                 <li dir="ltr" role="presentation">No upfront fees and free consultation</li>
+                                 <li dir="ltr" role="presentation">Avoid bankruptcy and regain control</li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/7CKN77B/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222097%22%2C%22slot%22%3A3%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Access Your Debt Free Plan</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-container" data-bhm-slot="4" data-bhm-cid="2089" data-bhm-ofid="3060" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/6DQD92T/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222089%22%2C%22slot%22%3A4%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/lendingforbadcreditlogo.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Same Day Funding up to $40,000</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Fast online loan matching</li>
+                                 <li dir="ltr" role="presentation">No collateral required</li>
+                                 <li dir="ltr" role="presentation">Offers tailored to your credit profile<strong id="docs-internal-guid-11541bd4-7fff-7415-e457-e2521adfd53c"></strong></li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/6DQD92T/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222089%22%2C%22slot%22%3A4%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Access Funds</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-group-headline">Simple Tools That Help You Save or Build Credit</div>
+                        <div class="bhm-creative-group-subheadline">From rent reporting to low-cost internet, these resources help you stretch your budget and improve your financial standing.</div>
+                        <div class="bhm-creative-container" data-bhm-slot="5" data-bhm-cid="2096" data-bhm-ofid="3642" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/7FLLFD7/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222096%22%2C%22slot%22%3A5%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/tmobilelogo1.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Get Blazing 5G Home Internet for $45/Mo + $300 Gift Card</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Simple setup, no annual contracts</li>
+                                 <li dir="ltr" role="presentation">Stream, work, and game reliably</li>
+                                 <li dir="ltr" role="presentation">Light Fast 5G Internet</li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/7FLLFD7/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222096%22%2C%22slot%22%3A5%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Get 5G Home Internet</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-group-headline">Important Auto Information</div>
+                        <div class="bhm-creative-group-subheadline">Required in nearly every state. Activate fast and find low monthly rates with no commitment.</div>
+                        <div class="bhm-creative-container" data-bhm-slot="6" data-bhm-cid="2087" data-bhm-ofid="0" data-bhm-slid="1142" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="0" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/cmp/2D2DH/2RS59X7/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222087%22%2C%22slot%22%3A6%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/autoinsurancegenericlogo1.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Doing This Can Save Up to 70% Off Your Insurance</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Coverage options starting at $39/month</li>
+                                 <li dir="ltr" role="presentation">Updating to the Best Coverage</li>
+                                 <li dir="ltr" role="presentation">Start coverage in minutes — no phone calls</li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/cmp/2D2DH/2RS59X7/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222087%22%2C%22slot%22%3A6%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>See How</p>
+                              </a>
+                           </div>
+                           <div class="bhm-creative-disclaimer">
+                              <p>*Avg. expenditure $89/mo.</p>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-group-headline">Start Earning Sooner with Job Matches That Fit You</div>
+                        <div class="bhm-creative-group-subheadline">Connect with employers hiring right now and find flexible work that fits your lifestyle.</div>
+                        <div class="bhm-creative-container" data-bhm-slot="7" data-bhm-cid="2092" data-bhm-ofid="3679" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/7HG14LN/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222092%22%2C%22slot%22%3A7%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/expertjobmatchlogo.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Get Matched to Local Jobs</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Find flexible, part-time, remote seekers and full-time job options</li>
+                                 <li dir="ltr" role="presentation">Fast matching, no resume required</li>
+                                 <li dir="ltr" role="presentation">Personalized Matching</li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/7HG14LN/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222092%22%2C%22slot%22%3A7%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Access My Job Matches</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-container" data-bhm-slot="8" data-bhm-cid="2094" data-bhm-ofid="926" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="-1" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/2LWX2H7/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222094%22%2C%22slot%22%3A8%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/mprlogo2.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Create a Perfect Resume in Minutes</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li dir="ltr" role="presentation">Step-by-step resume builder with expert content</li>
+                                 <li dir="ltr" role="presentation">ATS-friendly templates that get noticed</li>
+                                 <li dir="ltr" role="presentation">Download your resume instantly and apply faster</li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/2LWX2H7/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222094%22%2C%22slot%22%3A8%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Access My Resume Builder</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="bhm-creative-group-headline">Get Help with Rent, Housing, and Life Expenses</div>
+                        <div class="bhm-creative-group-subheadline">These programs support individuals and families with real needs — including housing vouchers, grants, and financial assistance.</div>
+                        <div class="bhm-creative-container" data-bhm-slot="9" data-bhm-cid="2086" data-bhm-ofid="3130" data-bhm-slid="0" data-bhm-aucid="1349" data-bhm-auto-redirect="0" data-bhm-auto_redirect_timer="0" data-bhm-adid="08dfb2cf16874e5a8182530070b473127ee04b5795ace545">
+                           <div class="bhm-creative-image"><a class="bhm-creative-button" href="https://www.bhgtrack.com/3J67C/6J7L4KC/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222086%22%2C%22slot%22%3A9%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" target="_blank"><img src="https://flow.yourcreditreport.info/assets/img/assistanceguideslogo.webp"></a></div>
+                           <div class="bhm-creative-headline">
+                              <p>Section 8 Rent Relief Options Are Available</p>
+                           </div>
+                           <div class="bhm-creative-text">
+                              <ul>
+                                 <li>Learn About Support for Families, Seniors &amp; Disabled Individuals</li>
+                                 <li>Choose Where You Live if You Qualify</li>
+                                 <li>See How to Apply - It's Fast, Free &amp; Easy!</li>
+                              </ul>
+                           </div>
+                           <div class="bhm-creative-cta" data-bhm-rcid="">
+                              <a href="https://www.bhgtrack.com/3J67C/6J7L4KC/?&amp;source_id=08dfb2cf16874e5a8182530070b473127ee04b5795ace545&amp;sub1=status-v2&amp;sub2=bc2554fbf018461bb31de21c66d4b149&amp;sub3=brightoffersv2.5&amp;sub4=%7B%22caid%22%3A%221206%22%2C%22auid%22%3A%221299%22%2C%22crid%22%3A%222086%22%2C%22slot%22%3A9%2C%22aucid%22%3A1349%2C%22uuid%22%3A%22a6db3eca-d273-4112-825a-a94799fee593%22%2C%22adid%22%3A%2208dfb2cf16874e5a8182530070b473127ee04b5795ace545%22%7D" class=" bhm-creative-button" target="_blank">
+                                 <p>Learn More</p>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="carsearch"></div>
+      <div class="blog-area pd-top-36 pb-2 mg-top-40">
+         <center>
+            <a class="btn btn-green" href="https://search.carfidirect.com/?zipcode=48423&radius=50&body_type=" style="margin-bottom:10px;background-color: #62b346;" target="_blank">View ALL Vehicles <i class="fa fa-search"></i></a><br>390 Vehicles in Your Area
+         </center>
+         <div class="container">
+            <div class="blog-slider owl-carousel">
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=1GNKVGKD9FJ357741&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=1GNKVGKD9FJ357741&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/3511/chevrolet_traverse_2015_1GNKVGKD9FJ357741_3511_2602542857.jpg?ver=20250524"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=1GNKVGKD9FJ357741&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2015<br>Chevrolet Traverse</a><br>
+                  <p><i>Special Pricing!</i><br>
+                  Fenton,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=1G11E5SA6DF152515&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=1G11E5SA6DF152515&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/3511/chevrolet_malibu_2013_1G11E5SA6DF152515_3511_2603912769.jpg?ver=20250528"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=1G11E5SA6DF152515&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2013<br>Chevrolet Malibu</a><br>
+                  <p>Est $118/mo<br>
+                  Fenton,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=JF2SJAEC0EH451549&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=JF2SJAEC0EH451549&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/3511/subaru_forester_2014_JF2SJAEC0EH451549_3511_2605229021.jpg?ver=20250531"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=JF2SJAEC0EH451549&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2014<br>Subaru Forester</a><br>
+                  <p>Est $142/mo<br>
+                  Fenton,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=2C4RDGBG3GR202314&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=2C4RDGBG3GR202314&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/86671/dodge_grand%20caravan_0_2C4RDGBG3GR202314_86671_2596386159.jpg?ver=20250527"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=2C4RDGBG3GR202314&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2016<br>Dodge Grand Caravan</a><br>
+                  <p>Est $144/mo<br>
+                  Highland charter twp,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=3N1AB7AP1JL643144&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=3N1AB7AP1JL643144&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/86671/nissan_sentra_2018_3N1AB7AP1JL643144_86671_2594541923.jpg?ver=20250527"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=3N1AB7AP1JL643144&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2018<br>Nissan Sentra</a><br>
+                  <p>Est $148/mo<br>
+                  Highland charter twp,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=ZACCJBAB9JPJ13525&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=ZACCJBAB9JPJ13525&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/3511/jeep_renegade_2018_ZACCJBAB9JPJ13525_3511_2608320261.jpg?ver=20250607"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=ZACCJBAB9JPJ13525&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2018<br>Jeep Renegade</a><br>
+                  <p>Est $150/mo<br>
+                  Fenton,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=2GKFLTEK9G6103565&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=2GKFLTEK9G6103565&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/86671/gmc_terrain_0_2GKFLTEK9G6103565_86671_2607666031.jpg?ver=20250605"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=2GKFLTEK9G6103565&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2016<br>GMC Terrain</a><br>
+                  <p>Est $175/mo<br>
+                  Highland charter twp,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=2FMPK4K9XJBC43743&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=2FMPK4K9XJBC43743&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/3511/ford_edge_2018_2FMPK4K9XJBC43743_3511_2605228966.jpg?ver=20250531"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=2FMPK4K9XJBC43743&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2018<br>Ford Edge</a><br>
+                  <p>Est $257/mo<br>
+                  Fenton,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=1HGCV2F57JA036052&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=1HGCV2F57JA036052&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/86671/honda_accord_2018_1HGCV2F57JA036052_86671_2599472202.jpg?ver=20250516"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=1HGCV2F57JA036052&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2018<br>Honda Accord Sedan</a><br>
+                  <p>Est $270/mo<br>
+                  Highland charter twp,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="https://autos.lotlinx.com?ad=KM8K5CA38NU843668&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2" target="_blank">
+                     <div class="single-blog">
+                        <div class="thumb" style="min-height:160.5px">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=KM8K5CA38NU843668&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2"><img class="carimg" src="https://imgcdn.lotlinx.com/vdn/86671/hyundai_kona_2022_KM8K5CA38NU843668_86671_2584806305.jpg?ver=20250527"  loading="lazy" style="width:100%;height:100%;"></a>
+                  </div>
+                  <div class="details">
+                  <a target="_blank" href="https://autos.lotlinx.com?ad=KM8K5CA38NU843668&request=AdLink&pubId=175000&url=1&channelid=statuspage_v2">2022<br>Hyundai Kona</a><br>
+                  <p>Est $272/mo<br>
+                  Highland charter twp,MI</p>
+                  </div>
+                  </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer Area -->
+      <div class="footer-area" style="margin-bottom:0px;">
+         <div class="footer-top text-center" style="background-color: #2b5174;">
+            <div class="container">
+               <p>Copyright ©2025 carfidirect.net. All Rights Reserved</p>
+            </div>
+         </div>
+      </div>
+      <!-- back to top area start -->
+      <div class="back-to-top">
+         <span class="back-top"><i class="fa fa-angle-up"></i></span>
+      </div>
+      <!-- back to top area end -->
+      <!-- All Js File here -->
+      <script src="https://go.carfidirect.net/v2/assets/js/vendor.js"></script>
+      <script src="https://go.carfidirect.net/v2/assets/js/main.js"></script>
+      <!-- Begin Centered Modal -->
+      <div id="modal-centered" class="modal fade">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">Notice</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">×</span>
+                  <span class="sr-only">close</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <p>It's beneficial for you to know your credit scores, get your score and protection over your credit now!<br><br>
+                     <a class="btn btn-green" href="https://www.b8tx.com/8LJN3/D5FQKL/?sub1=status-v2_alert&firstname=&lastname=&email=&phone=&address=&city=Highland Charter Twp&state=MI&zipcode=48423" target="_blank">Get Scores/Protection <i class="fa fa-arrow-right"></i></a>
+                     </a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Centered Modal -->
+      <script type="javascript">
+         $("#arrow").click(function() {
+         doBounce($(this), 3, '10px', 300);   
+         });
+         function doBounce(element, times, distance, speed) {
+         for(var i = 0; i < times; i++) {
+             element.animate({marginTop: '-='+distance}, speed)
+                 .animate({marginTop: '+='+distance}, speed);
+         }        
+         }
+      </script>
+      <div class="topRatingOnlyBorderBox">
+         <!--REVIEWS DESKTOP-->
+         <div class="table-responsive hidden-xs displayOverflow">
+            </tr>
+            </table>
+         </div>
+         <!--END REVIEWS DESKTOP-->
+      </div>
+      <script>
+         var owl = $('.owl-carousel');
+         owl.owlCarousel({
+             items:2,
+             loop:true,
+             margin:10,
+             autoplay:true,
+             autoplayTimeout:2000,
+             autoplayHoverPause:true,
+             responsiveClass:true,
+                             responsive: {
+                             0: {
+                                 items: 1
+                             },
+                             300: {
+                                 items: 2
+                             },
+                             600: {
+                                 items: 3
+                             },
+                             1000: {
+                                 items: 5
+                             }
+         }
+         });
+
+         // Sticky Credit Score Banner JavaScript
+         document.addEventListener('DOMContentLoaded', function() {
+             const creditBanner = document.querySelector('.bhm-offer .bhm-offer-wall .bhm-creative-container[data-bhm-slot="0"]');
+             const headerArea = document.querySelector('.header-area');
+             
+             if (creditBanner) {
+                 let stickySpacer = null;
+                 const originalOffset = creditBanner.offsetTop;
+                 
+                 // Calculate header height
+                 function getHeaderHeight() {
+                     return headerArea ? headerArea.offsetHeight : 60;
+                 }
+                 
+                 function handleScroll() {
+                     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                     const headerHeight = getHeaderHeight();
+                     
+                     if (scrollTop > originalOffset) {
+                         if (!creditBanner.classList.contains('sticky')) {
+                             creditBanner.classList.add('sticky');
+                             
+                             // Update top position based on header height
+                             creditBanner.style.top = headerHeight + 'px';
+                             
+                             // Create spacer element
+                             stickySpacer = document.createElement('div');
+                             stickySpacer.className = 'sticky-spacer';
+                             stickySpacer.style.height = creditBanner.offsetHeight + 'px';
+                             creditBanner.parentNode.insertBefore(stickySpacer, creditBanner.nextSibling);
+                         }
+                     } else {
+                         if (creditBanner.classList.contains('sticky')) {
+                             creditBanner.classList.remove('sticky');
+                             creditBanner.style.top = '';
+                             
+                             // Remove spacer element
+                             if (stickySpacer && stickySpacer.parentNode) {
+                                 stickySpacer.parentNode.removeChild(stickySpacer);
+                                 stickySpacer = null;
+                             }
+                         }
+                     }
+                 }
+                 
+                 // Add scroll event listener
+                 window.addEventListener('scroll', handleScroll);
+                 
+                 // Handle window resize to recalculate header height
+                 window.addEventListener('resize', function() {
+                     if (creditBanner.classList.contains('sticky')) {
+                         const headerHeight = getHeaderHeight();
+                         creditBanner.style.top = headerHeight + 'px';
+                     }
+                 });
+                 
+                 // Initial check
+                 handleScroll();
+             }
+         });
+      </script>
+   </body>
+</html>
